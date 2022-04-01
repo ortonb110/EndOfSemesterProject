@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  line-height: 1.5;
+}
+
+body {
+  font-size: 1.6rem;
+  background-color: #7d2ae8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 40px;
+}
+
+a {
+  text-decoration: none;
+}
+.container {
+  max-width: 400px;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 0.5rem;
+  margin-top: 20rem;
+}
+
+form {
+  height: 100%;
+  width: 100%;
+  padding: 20px 30px;
+}
+
+.form-content .title {
+  margin-bottom: 2rem;
+  font-size: 3rem;
+  font-weight: 700;
+  position: relative;
+}
+
+.form-content .title::before {
+  content: "";
+  width: 25px;
+  height: 3px;
+  background-color: #7d2ae8;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.form-content .input-box {
+  position: relative;
+  height: 60px;
+  width: 100%;
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+}
+
+.form-content .input-box input {
+  font-size: 2rem;
+  padding: 0 3rem;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.form-content .input-box span {
+  position: absolute;
+  color: #7d2ae8;
+  font-size: 2rem;
+  vertical-align: middle;
+}
+
+.form-content .input-box input:focus {
+  border-color: #7d2ae8;
+}
+
+form .form-content .btn input {
+  width: 100%;
+  padding: 1.5rem 0;
+  background-color: #7d2ae8;
+  color: #fff;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+form .form-content .btn input:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+    color: #7d2ae8;
+    border-color: #7d2ae8;
+}
+
+form .form-content a {
+    font-size: 1.7rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+form .form-content a:hover {
+    text-decoration: underline;
+}
