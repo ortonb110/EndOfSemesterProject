@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TMS Admin Panel</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link
+      type="image/png"
+      sizes="32x32"
+      rel="icon"
+      href="../icons/icons8-bus-32 (1).png"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../styles/adminPanel.css" />
+  </head>
+  <body>
+    <nav class="navbar-container">
+      <div class="nav-content">
+        <div class="nav-lead">
+          <ul class="list">
+            <li class="listitems">
+              <img src="../icons/smlogo.png" class="logo" alt="" />
+              <div class="text">
+                <p>Transport</p>
+                <p>Management System</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="search-bar">
+          <span class="material-icons search-icon"> search </span>
+          <input type="text" class="search" placeholder="Search..." />
+        </div>
+        <div class="nav-user-details">
+          <li class="listitems">
+            <img src="../icons/user.png" class="logo user-photo" alt="" />
+            <div class="text">
+              <p>Bright orton</p>
+              <p>Admin for SM</p>
+            </div>
+          </li>
+          <a href="../index.html"
+            ><span class="material-icons arrow"> logout </span></a
+          >
+        </div>
+      </div>
+    </nav>
+    <section class="hero">
+      <div class="hero-nav-left">
+        <div class="category">
+          <span class="material-icons icon"> person </span>
+          <span class="text">Profile</span>
+        </div>
+        <div class="category active">
+          <span class="material-icons icon">
+            <span class="material-icons"> airline_seat_recline_normal </span>
+          </span>
+          <span class="text">Drivers</span>
+        </div>
+        <div class="category">
+          <span class="material-icons icon"> task </span>
+          <span class="text">Task</span>
+        </div>
+        <div class="category">
+          <span class="material-icons icon"> input </span>
+          <span class="text">Logs</span>
+        </div>
+        <div class="category">
+          <span class="material-icons icon"> summarize </span>
+          <span class="text">Reports</span>
+        </div>
+        <div class="category">
+          <span class="material-icons icon">
+            <span class="material-icons"> admin_panel_settings </span>
+          </span>
+          <span class="text">Admins</span>
+        </div>
+      </div>
+      <div class="main-body">
+        <div class="hero-container">
+          <div class="top-section">
+            <div class="left-section">
+              <span class="herotext me-2">Drivers</span>
+              <!-- Button trigger modal -->
+              <button
+                type="button"
+                class="btn btn-primary btn-lg me-2"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+              >
+                Add New Driver
+              </button>
+              <!-- Modal -->
+              <div
+                class="modal fade"
+                id="exampleModal"
+                tabindex="-1"
+                aria-labelledby="exampleModalLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">
+                        Driver Details
+                      </h5>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="modal-body">
+                      <label for="recipient-name" class="col-form-label"
+                        >Driver Name</label
+                      >
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="recipient-name"
+                      />
+                      <label for="recipient-name" class="col-form-label"
+                        >License Number</label
+                      >
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="recipient-name"
+                      />
+                      <label for="recipient-name" class="col-form-label"
+                        >Vehicle Type</label
+                      >
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="recipient-name"
+                      />
+                      <label for="recipient-name" class="col-form-label"
+                        >Location Assigned</label
+                      >
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="recipient-name"
+                      />
+                      <label for="photo" class="col-form-label"
+                        >Select Photo</label
+                      >
+                      <input type="file" class="form-control mt12" id="photo" />
+                    </div>
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-secondary"
+                        data-bs-dismiss="modal"
+                      >
+                        Close
+                      </button>
+                      <button type="button" class="btn btn-primary">
+                        Save changes
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button class="btn btn-light btn-lg me-2">Import Drivers</button>
+              <button class="btn btn-light btn-lg">
+                Export Drivers(Excel)
+              </button>
+            </div>
+          </div>
+          <div class="hero-details mt-4">
+            <!-- <ul class="itemview">
+              <li class="itemview-list">Photo</li>
+              <li class="itemview-list">Driver name</li>
+              <li class="itemview-list">Phone</li>
+              <li class="itemview-list">Vehicle number</li>
+              <li class="itemview-list">Status</li>
+              <li class="itemview-list">Time slots</li>
+              <li class="itemview-list me-3">Action</li>
+            </ul>
+            <ul class="itemview">
+              <li class="driver-list">
+                <img src="../icons/user.png" alt="" class="logo userprofile" />
+              </li>
+              <li class="driver-list-extra">Bright Orton</li>
+              <li class="driver-list-extra">0203219268</li>
+              <li class="driver-list-extra">M-20-GS-457</li>
+              <li class="driver-list-extra activeservices">Available</li>
+              <li class="driver-list-extra">
+                <select
+                  class="form-select form-select-sm"
+                  aria-label=".form-select-sm example"
+                >
+                  <option selected>Select Time</option>
+                  <option value="1">9:00Am</option>
+                  <option value="2">11:00AM</option>
+                  <option value="3">2:00PM</option>
+                  <option value="4">3:30PM</option>
+                  <option value="5">5:00PM</option>
+                </select>
+              </li>
+              <li class="driver-list-extra"><span class="material-icons icon-new">
+                assignment_turned_in
+                </span>
+                <span class="material-icons icon-new">
+                  edit
+                  </span>
+                  <span class="material-icons icon-new">
+                    delete
+                    </span></li>
+            </ul>
+            <ul class="itemview">
+              <li class="driver-list">
+                <img src="../icons/user.png" alt="" class="logo userprofile" />
+              </li>
+              <li class="driver-list-extra">Daniel Kharis</li>
+              <li class="driver-list-extra">0203219268</li>
+              <li class="driver-list-extra">M-20-GS-457</li>
+              <li class="driver-list-extra activeservices on-service">Active</li>
+              <li class="driver-list-extra">
+                <select
+                  class="form-select form-select-sm"
+                  aria-label=".form-select-sm example"
+                >
+                  <option selected>Select Time</option>
+                  <option value="1">9:00Am</option>
+                  <option value="2">11:00AM</option>
+                  <option value="3">2:00PM</option>
+                  <option value="4">3:30PM</option>
+                  <option value="5">5:00PM</option>
+                </select>
+              </li>
+              <li class="driver-list-extra"><span class="material-icons icon-new">
+                assignment_turned_in
+                </span>
+                <span class="material-icons icon-new">
+                  edit
+                  </span>
+                  <span class="material-icons icon-new">
+                    delete
+                    </span></li>
+            </ul>
+            <ul class="itemview">
+              <li class="driver-list">
+                <img src="../icons/user.png" alt="" class="logo userprofile" />
+              </li>
+              <li class="driver-list-extra">Nicholas Quaye</li>
+              <li class="driver-list-extra">0203219268</li>
+              <li class="driver-list-extra">M-20-GS-457</li>
+              <li class="driver-list-extra activeservices off-service">Inactive</li>
+              <li class="driver-list-extra">
+                <select
+                  class="form-select form-select-sm"
+                  aria-label=".form-select-sm example"
+                >
+                  <option selected>Select Time</option>
+                  <option value="1">9:00Am</option>
+                  <option value="2">11:00AM</option>
+                  <option value="3">2:00PM</option>
+                  <option value="4">3:30PM</option>
+                  <option value="5">5:00PM</option>
+                </select>
+              </li>
+              <li class="driver-list-extra"><span class="material-icons icon-new">
+                assignment_turned_in
+                </span>
+                <span class="material-icons icon-new">
+                  edit
+                  </span>
+                  <span class="material-icons icon-new">
+                    delete
+                    </span></li>
+            </ul>
+            <ul class="itemview">
+              <li class="driver-list">
+                <img src="../icons/user.png" alt="" class="logo userprofile" />
+              </li>
+              <li class="driver-list-extra">Bright Orton</li>
+              <li class="driver-list-extra">0203219268</li>
+              <li class="driver-list-extra">M-20-GS-457</li>
+              <li class="driver-list-extra activeservices">Available</li>
+              <li class="driver-list-extra">
+                <select
+                  class="form-select form-select-sm"
+                  aria-label=".form-select-sm example"
+                >
+                  <option selected>Select Time</option>
+                  <option value="1">9:00Am</option>
+                  <option value="2">11:00AM</option>
+                  <option value="3">2:00PM</option>
+                  <option value="4">3:30PM</option>
+                  <option value="5">5:00PM</option>
+                </select>
+              </li>
+              <li class="driver-list-extra">
+                <span class="material-icons icon-new">
+                  assignment_turned_in
+                  </span>
+                  <span class="material-icons icon-new">
+                    edit
+                    </span>
+                    <span class="material-icons icon-new">
+                      delete
+                      </span>
+              </li>
+            </ul> -->
+            <table>
+              <tr>
+                <th>Photo</th>
+                <th>Driver Name</th>
+                <th>Phone</th>
+                <th>Vehicle</th>
+                <th>Status</th>
+                <th>Time Slots</th>
+                <th>Action</th>
+              </tr>
+              <tr>
+                <td class="driver-list">
+                  <img
+                    src="../icons/user.png"
+                    alt=""
+                    class="logo userprofile"
+                  />
+                </td>
+                <td>Bright Orton</td>
+                <td>0203219268</td>
+                <td>M-20-GS-457</td>
+                <td class="off-service">Inactive</td>
+                <td>
+                  <select
+                    class="form-select form-select-sm"
+                    aria-label=".form-select-sm example"
+                  >
+                    <option selected>Select Time</option>
+                    <option value="1">9:00Am</option>
+                    <option value="2">11:00AM</option>
+                    <option value="3">2:00PM</option>
+                    <option value="4">3:30PM</option>
+                    <option value="5">5:00PM</option>
+                  </select>
+                </td>
+                <td>
+                  <span class="material-icons icon-new">
+                    assignment_turned_in
+                  </span>
+                  <span class="material-icons icon-new"> edit </span>
+                  <span class="material-icons icon-new"> delete </span>
+                </td>
+              </tr>
+              <tr>
+                <td class="driver-list">
+                  <img
+                    src="../icons/user.png"
+                    alt=""
+                    class="logo userprofile"
+                  />
+                </td>
+                <td>Daniel Kharis</td>
+                <td>0203219268</td>
+                <td>M-20-GS-457</td>
+                <td class="on-service">Active</td>
+                <td>
+                  <select
+                    class="form-select form-select-sm"
+                    aria-label=".form-select-sm example"
+                  >
+                    <option selected>Select Time</option>
+                    <option value="1">9:00Am</option>
+                    <option value="2">11:00AM</option>
+                    <option value="3">2:00PM</option>
+                    <option value="4">3:30PM</option>
+                    <option value="5">5:00PM</option>
+                  </select>
+                </td>
+                <td>
+                  <span class="material-icons icon-new">
+                    assignment_turned_in
+                  </span>
+                  <span class="material-icons icon-new"> edit </span>
+                  <span class="material-icons icon-new"> delete </span>
+                </td>
+              </tr>
+              <tr>
+                <td class="driver-list">
+                  <img
+                    src="../icons/user.png"
+                    alt=""
+                    class="logo userprofile"
+                  />
+                </td>
+                <td>Nicholas Quaye</td>
+                <td>0203219268</td>
+                <td>M-20-GS-457</td>
+                <td class="on-service">Available</td>
+                <td>
+                  <select
+                    class="form-select form-select-sm"
+                    aria-label=".form-select-sm example"
+                  >
+                    <option selected>Select Time</option>
+                    <option value="1">9:00Am</option>
+                    <option value="2">11:00AM</option>
+                    <option value="3">2:00PM</option>
+                    <option value="4">3:30PM</option>
+                    <option value="5">5:00PM</option>
+                  </select>
+                </td>
+                <td>
+                  <span class="material-icons icon-new">
+                    assignment_turned_in
+                  </span>
+                  <span class="material-icons icon-new"> edit </span>
+                  <span class="material-icons icon-new"> delete </span>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

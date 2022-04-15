@@ -4,32 +4,31 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Transport Management System</title>
+    <title>Forgotten Password</title>
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="/styles/index.css" />
+    <link rel="stylesheet" href="../styles/index.css" />
+    <link rel="stylesheet" href="../styles/forgot.css" />
   </head>
   <body>
     <div class="container">
       <form action="#">
         <div class="form-content">
-          <div class="title">Login to Admin Panel </div>
+          <div class="title">Reset password</div>
           <div class="input-boxes">
             <div class="input-box">
               <span class="material-icons"> mail </span>
-              <input type="email" placeholder="Enter Admin email"  />
+              <input type="email" placeholder="Enter Admin email" required />
             </div>
-            <div class="input-box">
-              <span class="material-icons"> key </span>
-              <input type="password" placeholder="Enter Admin Key"  />
-            </div>
-            <div class="links"><span><a href="./html/forgotPass.html">Forgot password?</a></span><span class="employee"><a href="./html/emplogin.html">Employee login</a></span></div>
             <div class="btn input-box">
-              <button><a href="./html/adminPanel.html">Log in</a></button>
+              <button>Reset</button>
             </div>
-          
+            <div class="links">
+              <span><a class="linka" href="../index.html">Admin Login</a></span
+              ><span class="employee"><a href="emplogin.html">Employee login</a></span>
+            </div>
           </div>
         </div>
       </form>

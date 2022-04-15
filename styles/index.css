@@ -33,6 +33,7 @@ a {
   background-color: #fff;
   border-radius: 0.5rem;
   margin-top: 20rem;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
 
 form {
@@ -85,37 +86,53 @@ form {
 
 .form-content .input-box input:focus {
   border-color: #7d2ae8;
+  
 }
 
-form .form-content .btn input {
+ .form-content .btn button {
   width: 100%;
   padding: 1.5rem 0;
   background-color: #7d2ae8;
   color: #fff;
   border-radius: 0.5rem;
   cursor: pointer;
+  border: none;
+  font-size: 1.8rem;
 }
 
-form .form-content .btn input:hover {
-    background-color: rgba(0, 0, 0, 0.2);
-    color: #7d2ae8;
-    border-color: #7d2ae8;
+form .form-content .btn button:hover {
+  background-color: #4b1592;
+  color: #fff;
+  
+}
+
+form .form-content .btn button a {
+  color: #FFF;
+}
+form .form-content .btn button a:hover {
+  text-decoration: none;
 }
 
 form .form-content a {
-    font-size: 1.7rem;
-    font-weight: 500;
-    transition: all 0.3s ease;
+  font-size: 1.7rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
 }
 
 form .form-content a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 form .form-content .text {
-    margin-top: 1.5rem;
+  margin-top: 1.5rem;
 }
 
-form .form-content .text a {
-    color: #7d2ae8;
+
+form .form-content .links {
+  display: flex;
+  justify-content: space-between;
+}
+
+form .form-content .links a {
+  color: blue;
 }

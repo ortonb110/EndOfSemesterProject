@@ -1,0 +1,11 @@
+.form-content .title:before {
+    width: 50px;
+}
+
+form .form-content .links {
+    margin-top: 2rem;
+}
+
+form .form-content .links .linka {
+    color: blue;
+}
