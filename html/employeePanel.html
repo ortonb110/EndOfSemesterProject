@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SM TMS</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link
+      type="image/png"
+      sizes="32x32"
+      rel="icon"
+      href="../icons/icons8-bus-32 (1).png"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../styles/adminPanel.css" />
+  </head>
+  <body>
+    <nav class="navbar-container">
+      <div class="nav-content">
+        <div class="nav-lead">
+          <ul class="list">
+            <li class="listitems">
+              <img src="../icons/smlogo.png" class="logo" alt="" />
+              <div class="text">
+                <p>Transport</p>
+                <p>Management System</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="search-bar">
+          <span class="material-icons search-icon"> search </span>
+          <input type="text" class="search" placeholder="Search..." />
+        </div>
+        <div class="nav-user-details">
+          <li class="listitems">
+            <img src="../icons/user.png" class="logo user-photo" alt="" />
+            <div class="text">
+              <p>Ebenezer Fynn Orton</p>
+              <p>Employee Account</p>
+            </div>
+          </li>
+          <a href="../html/emplogin.html"
+            ><span class="material-icons arrow"> logout </span></a
+          >
+        </div>
+      </div>
+    </nav>
+    <section class="hero">
+      <div class="hero-nav-left">
+        <div class="category">
+          <span class="material-icons icon"> person </span>
+          <span class="text">Profile</span>
+        </div>
+        <div class="category active">
+          <span class="material-icons icon">
+            <span class="material-icons"> airline_seat_recline_normal </span>
+          </span>
+          <span class="text">Available Drivers</span>
+        </div>
+        <div class="category">
+          <span class="material-icons icon"> task </span>
+          <span class="text">Task</span>
+        </div>
+    
+        </div>
+      
+      </div>
+      <div class="main-body">
+        <div class="hero-container">
+          <div class="top-section">
+            <div class="left-section">
+              <span class="herotext me-2">Drivers</span>
+            </div>
+          </div>
+          <div class="hero-details mt-4">
+            <table>
+              <tr>
+                <th>Photo</th>
+                <th>Driver Name</th>
+                <th>Phone</th>
+                <th>Vehicle</th>
+                <th>Pickup/Drop off Location</th>
+                <th>Time Slots</th>
+                <th>Action</th>
+              </tr>
+              <tr>
+                <td class="driver-list">
+                  <img
+                    src="../icons/avataaars (2).png"
+                    alt=""
+                    class="logo userprofile"
+                  />
+                </td>
+                <td>Bright Orton</td>
+                <td>0203219268</td>
+                <td>M-20-GS-457</td>
+                <td>Accra Central</td>
+                <td>
+                  <select
+                    class="form-select form-select-sm"
+                    aria-label=".form-select-sm example"
+                  >
+                    <option selected>Select Time</option>
+                    <option value="1">9:00Am</option>
+                    <option value="2">11:00AM</option>
+                    <option value="3">2:00PM</option>
+                    <option value="4">3:30PM</option>
+                    <option value="5">5:00PM</option>
+                  </select>
+                </td>
+                <td>
+                  <span class="material-icons icon-new">
+                    assignment_turned_in
+                  </span>
+                  <span class="material-icons icon-new"> edit </span>
+                  
+                </td>
+              </tr>
+              <tr>
+                <td class="driver-list">
+                  <img
+                    src="../icons/avataaars (1).png"
+                    alt=""
+                    class="logo userprofile"
+                  />
+                </td>
+                <td>Daniel Kharis</td>
+                <td>0203219268</td>
+                <td>M-20-GS-457</td>
+                <td>Adenta/Madina</td>
+                <td>
+                  <select
+                    class="form-select form-select-sm"
+                    aria-label=".form-select-sm example"
+                  >
+                    <option selected>Select Time</option>
+                    <option value="1">9:00Am</option>
+                    <option value="2">11:00AM</option>
+                    <option value="3">2:00PM</option>
+                    <option value="4">3:30PM</option>
+                    <option value="5">5:00PM</option>
+                  </select>
+                </td>
+                <td>
+                  <span class="material-icons icon-new">
+                    assignment_turned_in
+                  </span>
+                  <span class="material-icons icon-new"> edit </span>
+                  
+                </td>
+              </tr>
+              <tr>
+                <td class="driver-list">
+                  <img
+                    src="../icons//avataaars (2).png"
+                    alt=""
+                    class="logo userprofile"
+                  />
+                </td>
+                <td>Nicholas Quaye</td>
+                <td>0203219268</td>
+                <td>M-20-GS-457</td>
+                <td>Nkrumah Circle</td>
+                <td>
+                  <select
+                    class="form-select form-select-sm"
+                    aria-label=".form-select-sm example"
+                  >
+                    <option selected>Select Time</option>
+                    <option value="1">9:00Am</option>
+                    <option value="2">11:00AM</option>
+                    <option value="3">2:00PM</option>
+                    <option value="4">3:30PM</option>
+                    <option value="5">5:00PM</option>
+                  </select>
+                </td>
+                <td>
+                  <span class="material-icons icon-new">
+                    assignment_turned_in
+                  </span>
+                  <span class="material-icons icon-new"> edit </span>
+                 
+                </td>
+              </tr>
+              <tr>
+                <td class="driver-list">
+                  <img
+                    src="../icons/avataaars (3).png"
+                    alt=""
+                    class="logo userprofile"
+                  />
+                </td>
+                <td>Bryan</td>
+                <td>0203219268</td>
+                <td>M-20-GS-457</td>
+                <td>Kasoa Market</td>
+                <td>
+                  <select
+                    class="form-select form-select-sm"
+                    aria-label=".form-select-sm example"
+                  >
+                    <option selected>Select Time</option>
+                    <option value="1">9:00Am</option>
+                    <option value="2">11:00AM</option>
+                    <option value="3">2:00PM</option>
+                    <option value="4">3:30PM</option>
+                    <option value="5">5:00PM</option>
+                  </select>
+                </td>
+                <td>
+                  <span class="material-icons icon-new">
+                    assignment_turned_in
+                  </span>
+                  <span class="material-icons icon-new"> edit </span>
+                  
+                </td>
+              </tr>
+              <tr>
+                <td class="driver-list">
+                  <img
+                    src="../icons/avataaars (4).png"
+                    alt=""
+                    class="logo userprofile"
+                  />
+                </td>
+                <td>Evans Danquah</td>
+                <td>0203219268</td>
+                <td>M-20-GS-457</td>
+                <td>Amasaman/Pokuase</td>
+                <td>
+                  <select
+                    class="form-select form-select-sm"
+                    aria-label=".form-select-sm example"
+                  >
+                    <option selected>Select Time</option>
+                    <option value="1">9:00Am</option>
+                    <option value="2">11:00AM</option>
+                    <option value="3">2:00PM</option>
+                    <option value="4">3:30PM</option>
+                    <option value="5">5:00PM</option>
+                  </select>
+                </td>
+                <td>
+                  <span class="material-icons icon-new">
+                    assignment_turned_in
+                  </span>
+                  <span class="material-icons icon-new"> edit </span>
+                  
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
