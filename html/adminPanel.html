@@ -98,7 +98,7 @@
                 data-bs-toggle="modal"
                 data-bs-target="#exampleModal"
               >
-                Add New Driver
+                Add Driver
               </button>
               <!-- Modal -->
               <div
@@ -138,14 +138,7 @@
                         class="form-control"
                         id="recipient-name"
                       />
-                      <label for="recipient-name" class="col-form-label"
-                        >Vehicle Type</label
-                      >
-                      <input
-                        type="text"
-                        class="form-control"
-                        id="recipient-name"
-                      />
+
                       <label for="recipient-name" class="col-form-label"
                         >Location Assigned</label
                       >
@@ -174,6 +167,68 @@
                   </div>
                 </div>
               </div>
+              <button
+                type="button"
+                class="btn btn-success btn-lg me-2"
+                data-bs-toggle="modal"
+                data-bs-target="#Modal"
+              >
+                Add Vehicle
+              </button>
+              <!-- Modal -->
+              <div
+                class="modal fade"
+                id="Modal"
+                tabindex="-1"
+                aria-labelledby="exampleModalLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">
+                        Vehicle Details
+                      </h5>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="modal-body">
+                      <label for="recipient-name" class="col-form-label"
+                        >Vehicle name</label
+                      >
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="recipient-name"
+                      />
+                      <label for="recipient-name" class="col-form-label"
+                        >Vehicle Plate Number</label
+                      >
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="recipient-name"
+                      />
+                    </div>
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-secondary"
+                        data-bs-dismiss="modal"
+                      >
+                        Close
+                      </button>
+                      <button type="button" class="btn btn-primary">
+                        Save changes
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
               <button class="btn btn-light btn-lg me-2">Import Drivers</button>
               <button class="btn btn-light btn-lg">
                 Export Drivers(Excel)
@@ -181,141 +236,6 @@
             </div>
           </div>
           <div class="hero-details mt-4">
-            <!-- <ul class="itemview">
-              <li class="itemview-list">Photo</li>
-              <li class="itemview-list">Driver name</li>
-              <li class="itemview-list">Phone</li>
-              <li class="itemview-list">Vehicle number</li>
-              <li class="itemview-list">Status</li>
-              <li class="itemview-list">Time slots</li>
-              <li class="itemview-list me-3">Action</li>
-            </ul>
-            <ul class="itemview">
-              <li class="driver-list">
-                <img src="../icons/user.png" alt="" class="logo userprofile" />
-              </li>
-              <li class="driver-list-extra">Bright Orton</li>
-              <li class="driver-list-extra">0203219268</li>
-              <li class="driver-list-extra">M-20-GS-457</li>
-              <li class="driver-list-extra activeservices">Available</li>
-              <li class="driver-list-extra">
-                <select
-                  class="form-select form-select-sm"
-                  aria-label=".form-select-sm example"
-                >
-                  <option selected>Select Time</option>
-                  <option value="1">9:00Am</option>
-                  <option value="2">11:00AM</option>
-                  <option value="3">2:00PM</option>
-                  <option value="4">3:30PM</option>
-                  <option value="5">5:00PM</option>
-                </select>
-              </li>
-              <li class="driver-list-extra"><span class="material-icons icon-new">
-                assignment_turned_in
-                </span>
-                <span class="material-icons icon-new">
-                  edit
-                  </span>
-                  <span class="material-icons icon-new">
-                    delete
-                    </span></li>
-            </ul>
-            <ul class="itemview">
-              <li class="driver-list">
-                <img src="../icons/user.png" alt="" class="logo userprofile" />
-              </li>
-              <li class="driver-list-extra">Daniel Kharis</li>
-              <li class="driver-list-extra">0203219268</li>
-              <li class="driver-list-extra">M-20-GS-457</li>
-              <li class="driver-list-extra activeservices on-service">Active</li>
-              <li class="driver-list-extra">
-                <select
-                  class="form-select form-select-sm"
-                  aria-label=".form-select-sm example"
-                >
-                  <option selected>Select Time</option>
-                  <option value="1">9:00Am</option>
-                  <option value="2">11:00AM</option>
-                  <option value="3">2:00PM</option>
-                  <option value="4">3:30PM</option>
-                  <option value="5">5:00PM</option>
-                </select>
-              </li>
-              <li class="driver-list-extra"><span class="material-icons icon-new">
-                assignment_turned_in
-                </span>
-                <span class="material-icons icon-new">
-                  edit
-                  </span>
-                  <span class="material-icons icon-new">
-                    delete
-                    </span></li>
-            </ul>
-            <ul class="itemview">
-              <li class="driver-list">
-                <img src="../icons/user.png" alt="" class="logo userprofile" />
-              </li>
-              <li class="driver-list-extra">Nicholas Quaye</li>
-              <li class="driver-list-extra">0203219268</li>
-              <li class="driver-list-extra">M-20-GS-457</li>
-              <li class="driver-list-extra activeservices off-service">Inactive</li>
-              <li class="driver-list-extra">
-                <select
-                  class="form-select form-select-sm"
-                  aria-label=".form-select-sm example"
-                >
-                  <option selected>Select Time</option>
-                  <option value="1">9:00Am</option>
-                  <option value="2">11:00AM</option>
-                  <option value="3">2:00PM</option>
-                  <option value="4">3:30PM</option>
-                  <option value="5">5:00PM</option>
-                </select>
-              </li>
-              <li class="driver-list-extra"><span class="material-icons icon-new">
-                assignment_turned_in
-                </span>
-                <span class="material-icons icon-new">
-                  edit
-                  </span>
-                  <span class="material-icons icon-new">
-                    delete
-                    </span></li>
-            </ul>
-            <ul class="itemview">
-              <li class="driver-list">
-                <img src="../icons/user.png" alt="" class="logo userprofile" />
-              </li>
-              <li class="driver-list-extra">Bright Orton</li>
-              <li class="driver-list-extra">0203219268</li>
-              <li class="driver-list-extra">M-20-GS-457</li>
-              <li class="driver-list-extra activeservices">Available</li>
-              <li class="driver-list-extra">
-                <select
-                  class="form-select form-select-sm"
-                  aria-label=".form-select-sm example"
-                >
-                  <option selected>Select Time</option>
-                  <option value="1">9:00Am</option>
-                  <option value="2">11:00AM</option>
-                  <option value="3">2:00PM</option>
-                  <option value="4">3:30PM</option>
-                  <option value="5">5:00PM</option>
-                </select>
-              </li>
-              <li class="driver-list-extra">
-                <span class="material-icons icon-new">
-                  assignment_turned_in
-                  </span>
-                  <span class="material-icons icon-new">
-                    edit
-                    </span>
-                    <span class="material-icons icon-new">
-                      delete
-                      </span>
-              </li>
-            </ul> -->
             <table>
               <tr>
                 <th>Photo</th>
@@ -337,7 +257,7 @@
                 <td>Bright Orton</td>
                 <td>0203219268</td>
                 <td>M-20-GS-457</td>
-                <td class="off-service">Inactive</td>
+                <td class="off-service">Offline</td>
                 <td>
                   <select
                     class="form-select form-select-sm"
@@ -362,7 +282,7 @@
               <tr>
                 <td class="driver-list">
                   <img
-                    src="../icons/user.png"
+                    src="../icons/daniel.jpg"
                     alt=""
                     class="logo userprofile"
                   />
@@ -395,7 +315,7 @@
               <tr>
                 <td class="driver-list">
                   <img
-                    src="../icons/user.png"
+                    src="../icons/nicho.jpg"
                     alt=""
                     class="logo userprofile"
                   />
